@@ -13,7 +13,7 @@ http.interceptors.request.use(
 );
 
 class BaseService {
-    getBaseHttp() {
+        getBaseHttp() {
         const rootApi = "http://localhost:8082/api/v1/";
         return printf(rootApi);
     }
