@@ -1,8 +1,6 @@
 import http from "../AppConfig";
 import bService from "./BaseService"
 
-http.defaults.baseURL = bService.getBaseHttp();
-
 class UserService {
     logIn(user) {
         http.defaults.baseURL = bService.getBaseHttp();

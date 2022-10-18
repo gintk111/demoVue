@@ -13,7 +13,7 @@
                     <div class="col-md-7 col-lg-5">
                         <div class="wrap">
                             <div class="img">
-                                <img src="../assets/image/bg-1.jpg" style="width: 100%; height: 100%"/>
+                                <img src="../assets/image/bg-1.jpg" style="width: 100%; height: 100%" alt=""/>
                             </div>
                             <div class="login-wrap p-4 p-md-5">
                                 <div class="d-flex">
@@ -22,8 +22,8 @@
                                     </div>
                                     <div class="w-100">
                                         <p class="social-media d-flex justify-content-end">
-                                            <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
-                                            <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+                                            <a href="" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+                                            <a href="" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -59,8 +59,20 @@
                     </div>
                 </div>
             </div>
+<!--            <div :class="{ overlay_setting: isLoading }">-->
+<!--                <i :class="{ loading_setting: isLoading }"></i>-->
+<!--            </div>-->
             <div :class="{ overlay_setting: isLoading }">
-                <i :class="{ loading_setting: isLoading }"></i>
+                <div :class="{looping_rhombuses_spinner: isLoading}">
+                    <div class="rhombus"></div>
+                    <div class="rhombus"></div>
+                    <div class="rhombus"></div>
+                </div>
+
+                <div :class="{half_circle_spinner: isLoading}">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                </div>
             </div>
         </section>
     </div>
